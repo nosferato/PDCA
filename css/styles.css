@@ -1,6 +1,7 @@
 /*===========body================*/
 body {
     background:#e9e7ea;
+    height:0;
 }
 
 .textGreen {
@@ -11,6 +12,10 @@ body {
 }
 .textBlue {
     color: #019bd8;
+}
+
+.textCenter {
+    text-align:center;
 }
 
 /*===========navigation bar================*/
@@ -29,6 +34,7 @@ body {
 .navbar-toggle {
     margin-top: 3em;
 }
+
 
 /*changing menu text color*/
 .navbar-inverse .navbar-nav > li > a {
@@ -92,5 +98,13 @@ body {
 }
 #newsCarousel .img-circle-main {
     width: 9em;
+}
+
+/*=====================footer===========================*/
+
+/*changing menu text color*/
+.navbar-inverse .navbar-nav > li > a.footerIcons {
+    padding-top: 0.35em;
+    padding-bottom: 0.65em;
 }
 
