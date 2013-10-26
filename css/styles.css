@@ -3,6 +3,16 @@ body {
     background:#e9e7ea;
 }
 
+.textGreen {
+    color: #8a9f3b;
+}
+.textOrange {
+    color: #de6c26;
+}
+.textBlue {
+    color: #019bd8;
+}
+
 /*===========navigation bar================*/
 .pdcaNavbar {
     background: #59595b;
@@ -41,10 +51,46 @@ body {
   .navbar-right {
     padding-top:5.56em;
   }
+  
+  .fixedMenu .navbar-right {
+    padding-top:0;
+  }  
+  .fixedMenu .navbar > .container .navbar-brand {
+    height: 2em;
+  }
+  .fixedMenu .navbar > .container .navbar-brand img {
+    height:100%;
+    margin-top: -0.25em;
+  }  
+  
 }
 
-.img-circle {
-    width:145px;
-    height: 145px;
+@media (max-width: 768px) {
+  .fixedMenu .navbar-toggle {
+    margin-top:0.55em;
+  }  
+  .fixedMenu .navbar > .container .navbar-brand {
+    height: 2.7em;
+  }
+  .fixedMenu .navbar > .container .navbar-brand img {
+    height:100%;
+    margin-top: -0.25em;
+  }  
+  
+}
+
+/*=========================fixed menu==============*/
+.fixedMenu #myCarousel{
+    margin-top: 10.45em;
+}
+
+/*==================body======================*/
+
+.img-circle-main {
+    max-width: 26em;
+    height: 9em;
+}
+#newsCarousel .img-circle-main {
+    width: 9em;
 }
 
