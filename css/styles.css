@@ -19,7 +19,7 @@ body {
 }
 
 /*===========navigation bar================*/
-.pdcaNavbar {
+.pdcaHead, .pdcaFoot {
     background: #59595b;
     border-style: none;
 /*    box-shadow: 0 -3px 30px black;*/
@@ -34,7 +34,28 @@ body {
 .navbar-toggle {
     margin-top: 3em;
 }
+.navbar-nav > li > .dropdown-menu {
+    border-style: none;
+    background: #e9e7ea;
+}
+.dropdown-menu > .active > a,
+.navbar-inverse .navbar-nav .open .dropdown-menu > .active > a{
+    background: #8a9f3b;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    background: #59595b;
+}
 
+.nav .caret,
+.nav a:hover .caret,
+.navbar-inverse .navbar-nav > .open > a .caret,
+.navbar-inverse .navbar-nav > .open > a:hover .caret, 
+.navbar-inverse .navbar-nav > .open > a:focus .caret {
+    border-top-color: #8a9f3b;
+    border-bottom-color: #8a9f3b;
+}
 
 /*changing menu text color*/
 .navbar-inverse .navbar-nav > li > a {
@@ -43,14 +64,23 @@ body {
     font-size: 1.12em;
 }
 
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:visited,
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus{
     color: #8a9f3b;
     background: #e9e7ea;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
-    color: #8a9f3b;
-    background: #e9e7ea;
+.navbar-inverse .navbar-nav > li > a:hover, 
+.navbar-inverse .navbar-nav > li > a:focus,
+.dropdown-menu > li > a {
+     color: #8a9f3b;  
+     background: #e9e7ea;
+    font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -71,7 +101,7 @@ body {
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .fixedMenu .navbar-toggle {
     margin-top:0.55em;
   }  
@@ -82,6 +112,10 @@ body {
     height:100%;
     margin-top: -0.25em;
   }  
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    font-weight: bold;
+    color: #8a9f3b;
+  }
   
 }
 
@@ -106,5 +140,18 @@ body {
 .navbar-inverse .navbar-nav > li > a.footerIcons {
     padding-top: 0.35em;
     padding-bottom: 0.65em;
+}
+.logoFooter {
+    padding-top: 0.3em;
+}
+@media (max-width: 768px) {
+  /*changing menu text color*/
+    .navbar-inverse .navbar-nav.iconList > li {
+        float: left;
+    }
+    .navbar-inverse .navbar-nav.iconList {
+        float: left !important;
+    }
+  
 }
 
